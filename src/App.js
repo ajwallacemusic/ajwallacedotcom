@@ -44,36 +44,26 @@ function App(props) {
                     <AppBar position="static" elevation={0} color="default" classes={{root: classes.colorDefault}}>
                         <Toolbar>
                             <Grid container justify="space-between">
-
-                                <Hidden mdUp>
-                                    <Grid item xs={1}>
-                                        <IconButton edge="start">
-                                            <MenuIcon/>
-                                        </IconButton>
-                                    </Grid>
-                                </Hidden>
-
-                                <Hidden smDown>
-                                    <Grid item md={4}>
+                                    {/*<Grid item xs={1}>*/}
+                                        {/*<IconButton edge="start">*/}
+                                            {/*<MenuIcon/>*/}
+                                        {/*</IconButton>*/}
+                                    {/*</Grid>*/}
+                                    <Grid item md={4} xs={3}>
                                         <Button href="#">Home</Button>
                                     </Grid>
-                                </Hidden>
-
-                                <Grid item md={4} xs={11}>
+                                <Grid item md={4} xs={6}>
                                     <a href="#" style={{textDecoration: 'none', color: 'black'}}>
                                         <Typography align="center" variant="h3">
                                             AJ WALLACE
                                         </Typography></a>
                                 </Grid>
-
-                                <Hidden smDown>
-                                    <Grid item md={4}>
+                                    <Grid item md={4}xs={3}>
                                         <Grid container justify="flex-end">
                                             <Button edge="end"
                                                     href="https://ajwallacemusic.com/contact">Contact</Button>
                                         </Grid>
                                     </Grid>
-                                </Hidden>
                             </Grid>
                         </Toolbar>
                     </AppBar>
