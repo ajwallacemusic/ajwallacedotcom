@@ -6,3 +6,5 @@ This is a simple landing page to direct people to ajwallacemusic.com or to my de
 
 This site was built using create-react-app and uses React.js with Material-UI for components.
 
+Check it out live: [ajwallace.com](https://ajwallace.com)
+
