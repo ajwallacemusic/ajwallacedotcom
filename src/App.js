@@ -1,6 +1,7 @@
 import React from 'react';
-import greenmountain from './static/images/greenmountain.jpg'
-import bwmountain from './static/images/bwmountain.jpg'
+
+import ajwmusic from './static/images/ajwmusic.png';
+import computer from './static/images/computer.png';
 import Container from "@material-ui/core/Container";
 import './App.css';
 import Grid from "@material-ui/core/Grid";
@@ -10,9 +11,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from '@material-ui/icons/Menu';
-import Hidden from "@material-ui/core/Hidden";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -89,7 +87,7 @@ function App(props) {
                                 <a href="https://ajwallacemusic.com" target="_blank">
                                     <CardMedia
                                         component="img"
-                                        image={greenmountain}
+                                        image={ajwmusic}
                                         maxWidth={600}
                                     />
                                     <div style={styles.overlay}>
@@ -106,7 +104,7 @@ function App(props) {
                                 <a href="https://github.com/ajwallacemusic">
                                     <CardMedia
                                         component="img"
-                                        image={bwmountain}
+                                        image={computer}
                                         maxWidth={600}
                                     />
                                     <div style={styles.overlay}>
