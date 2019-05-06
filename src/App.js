@@ -72,7 +72,7 @@ function App(props) {
             <Container maxWidth="false">
                 <Grid container flex direction="row" justify="center">
                     <Grid item xl={9} lg={10} md={12} sm={9} xs={12}>
-                        <div style={{marginTop: 200, marginBottom: 200, marginLeft: 10, marginRight: 10}}>
+                        <div style={{marginTop: "7em", marginBottom: "7em", marginLeft: 10, marginRight: 10}}>
                             <Typography variant="h2" align="center" style={{lineHeight: 1.5}}>
                                 <h2>An old beat-up guitar, a computer screen covered in code, and copious amounts of intense
                                     creativity.</h2>
