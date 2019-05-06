@@ -10,15 +10,35 @@ import { ThemeProvider } from "@material-ui/styles/";
 const theme = createMuiTheme({
     typography: {
         fontFamily: "'Libre Baskerville', serif",
-        fontWeightLight: 400,
+        fontWeightLight: 300,
         fontWeightRegular: 400,
         fontWeightMedium: 700,
         fontWeightBold: 700,
+        button: {
+            fontFamily: "'Roboto Condensed', sans-serif"
+        },
+        h1: {
+            fontFamily: "'Crimson Text', serif"
+        },
+        h2: {
+            fontFamily: "'Crimson Text', serif",
+            fontSize: "1.75rem"
+        },
         h3: {
-            fontFamily: "'Pinyon Script', cursive",
+            fontFamily: "'Roboto Condensed', sans-serif",
+            fontSize: "1.75rem"
+        },
+        h4: {
+            fontFamily: "'Roboto Condensed', sans-serif",
+            fontWeight: 300,
+            fontSize: "2.5em"
         }
     }
 });
+
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Abel', sans-serif;
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>
