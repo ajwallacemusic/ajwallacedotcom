@@ -33,40 +33,45 @@ const styles = {
     }
 };
 
-function App(props) {
-    const {classes} = props;
+function Header(props){
+    const { classes } = props;
+
+return (
+
+    <AppBar position="static" elevation={0} color="default" classes={{root: classes.colorDefault}}>
+        <Toolbar>
+            <Grid container justify="space-between">
+                {/*<Grid item xs={1}>*/}
+                {/*<IconButton edge="start">*/}
+                {/*<MenuIcon/>*/}
+                {/*</IconButton>*/}
+                {/*</Grid>*/}
+                <Grid item md={4} xs={3}>
+                    <Button href="#">Home</Button>
+                </Grid>
+                <Grid item md={4} xs={6}>
+                    <a href="#" style={{textDecoration: 'none', color: 'black'}}>
+                        <Typography align="center" variant="h3">
+                            AJ WALLACE
+                        </Typography></a>
+                </Grid>
+                <Grid item md={4}xs={3}>
+                    <Grid container justify="flex-end">
+                        <Button edge="end"
+                                href="https://ajwallacemusic.com/contact">Contact</Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Toolbar>
+    </AppBar>
+) }
+
+function App() {
+
     return (
         <div>
-            <div>
-                <Box boxShadow={0}>
-                    <AppBar position="static" elevation={0} color="default" classes={{root: classes.colorDefault}}>
-                        <Toolbar>
-                            <Grid container justify="space-between">
-                                    {/*<Grid item xs={1}>*/}
-                                        {/*<IconButton edge="start">*/}
-                                            {/*<MenuIcon/>*/}
-                                        {/*</IconButton>*/}
-                                    {/*</Grid>*/}
-                                    <Grid item md={4} xs={3}>
-                                        <Button href="#">Home</Button>
-                                    </Grid>
-                                <Grid item md={4} xs={6}>
-                                    <a href="#" style={{textDecoration: 'none', color: 'black'}}>
-                                        <Typography align="center" variant="h3">
-                                            AJ WALLACE
-                                        </Typography></a>
-                                </Grid>
-                                    <Grid item md={4}xs={3}>
-                                        <Grid container justify="flex-end">
-                                            <Button edge="end"
-                                                    href="https://ajwallacemusic.com/contact">Contact</Button>
-                                        </Grid>
-                                    </Grid>
-                            </Grid>
-                        </Toolbar>
-                    </AppBar>
-                </Box>
-            </div>
+
+            <Header/>
             <Container maxWidth="false">
                 <Grid container flex direction="row" justify="center">
                     <Grid item xl={9} lg={10} md={12} sm={9} xs={12}>
