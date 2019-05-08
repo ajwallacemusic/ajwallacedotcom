@@ -34,10 +34,8 @@ const styles = {
 };
 
 function Header(props){
-    const { classes } = props;
-
+    const {classes} = props
 return (
-
     <AppBar position="static" elevation={0} color="default" classes={{root: classes.colorDefault}}>
         <Toolbar>
             <Grid container justify="space-between">
