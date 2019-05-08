@@ -10,7 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import withStyles from "@material-ui/core/styles/withStyles";
 
-const styles = {
+const styles1 = {
     overlay: {
         position: 'absolute',
         display: 'inline',
@@ -48,7 +48,7 @@ function Main() {
                                     image={ajwmusic}
                                     maxWidth={600}
                                 />
-                                <div style={styles.overlay}>
+                                <div style={styles1.overlay}>
                                     <Typography variant="h4">Music</Typography>
                                 </div>
                             </a>
@@ -65,7 +65,7 @@ function Main() {
                                     image={computer}
                                     maxWidth={600}
                                 />
-                                <div style={styles.overlay}>
+                                <div style={styles1.overlay}>
                                     <Typography variant="h4">Code</Typography>
                                 </div>
                             </a>
@@ -79,4 +79,4 @@ function Main() {
     );
 }
 
-export default withStyles(styles)(Main);
+export default withStyles(styles1)(Main);
