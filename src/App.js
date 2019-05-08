@@ -32,6 +32,9 @@ const styles = {
     },
     card: {
         position: 'relative'
+    },
+    focusHighlight: {
+        opacity: 0.5
     }
 };
 
@@ -85,7 +88,7 @@ function App(props) {
                     <Grid item md={6} xs={12} justify="center">
 
                         <Card style={{position: 'relative'}}>
-                            <CardActionArea>
+                            <CardActionArea classes={{focusVisible: classes.focusVisible}}>
                                 <a href="https://ajwallacemusic.com" target="_blank">
                                     <CardMedia
                                         component="img"
