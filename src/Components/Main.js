@@ -10,6 +10,28 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import withStyles from "@material-ui/core/styles/withStyles";
 
+const styles = theme => ({
+    colorDefault: {
+        backgroundColor: 'white',
+    },
+    card: {
+        position: 'relative'
+    },
+    hover: {
+        backgroundColor: "black",
+        opacity: 1,
+        transition: theme.transitions.create('opacity', {
+            duration: theme.transitions.duration.short,
+        }),
+        '&:hover': {
+            opacity: 0.89,
+            transition: theme.transitions.create('opacity', {
+                duration: theme.transitions.duration.short,
+            })
+        }
+    }
+});
+
 const styles1 = {
     overlay: {
         position: 'absolute',
@@ -22,7 +44,8 @@ const styles1 = {
 };
 
 
-function Main() {
+function Main(props) {
+    const { classes } = props;
     return (
         <Container maxWidth="false">
             <Grid container flex direction="row" justify="center">
@@ -40,8 +63,8 @@ function Main() {
             <Grid container direction="row" alignItems="center" justify="center" spacing={1}>
                 <Grid item md={6} xs={12} justify="center">
 
-                    <Card style={{position: 'relative'}}>
-                        <CardActionArea>
+                    <Card>
+                        <CardActionArea classes={{root: classes.hover}}>
                             <a href="https://ajwallacemusic.com" target="_blank">
                                 <CardMedia
                                     component="img"
@@ -58,7 +81,7 @@ function Main() {
                 </Grid>
                 <Grid item md={6} xs={12} justify="center">
                     <Card>
-                        <CardActionArea>
+                        <CardActionArea classes={{root: classes.hover}}>
                             <a href="https://github.com/ajwallacemusic">
                                 <CardMedia
                                     component="img"
@@ -79,4 +102,4 @@ function Main() {
     );
 }
 
-export default withStyles(styles1)(Main);
+export default withStyles(styles)(Main);
