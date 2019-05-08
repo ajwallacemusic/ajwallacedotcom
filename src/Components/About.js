@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/es/Typography/Typography";
 function About() {
     return (
         <div>
-        <Typography variant="p">
+            <Typography variant="p">
             I love old guitars, hiking in the woods while it lightly rains, anything DIY — especially if it involves soldering — and tinkering in general.
             I've been taking things apart since I can remember. I love looking at all the individual components of a guitar amp, or microphone, or old radio and seeing how they all work together.
             I guess that's why developing makes so much sense to me — a web app is just a bunch of different components that fit together in a succinct way, producing
@@ -22,4 +22,4 @@ function About() {
     );
 }
 
-export default About();
+export default (About);

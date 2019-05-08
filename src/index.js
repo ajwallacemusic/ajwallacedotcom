@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import { ThemeProvider } from "@material-ui/styles/";
+import BrowserRouter from "react-router-dom/es/BrowserRouter";
 
 
 const theme = createMuiTheme({
@@ -41,9 +42,11 @@ const theme = createMuiTheme({
 // font-family: 'Abel', sans-serif;
 
 ReactDOM.render(
+    <BrowserRouter>
     <ThemeProvider theme={theme}>
     <App />
-    </ThemeProvider>,
+    </ThemeProvider>
+    </BrowserRouter>,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

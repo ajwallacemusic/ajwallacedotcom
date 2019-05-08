@@ -11,17 +11,6 @@ import PropTypes from 'prop-types';
 const styles = {
     colorDefault: {
         background: 'white',
-    },
-    overlay: {
-        position: 'absolute',
-        display: 'inline',
-        top: '20px',
-        width: '100%',
-        textAlign: 'center',
-        color: 'white',
-    },
-    card: {
-        position: 'relative'
     }
 };
 
@@ -38,16 +27,22 @@ function Header(props){
                         {/*</IconButton>*/}
                         {/*</Grid>*/}
                         <Grid item md={4} xs={3}>
-                            <Button href="#">Home</Button>
+                            <Button href="/">Home</Button>
                         </Grid>
                         <Grid item md={4} xs={6}>
-                            <a href="#" style={{textDecoration: 'none', color: 'black'}}>
+                            <a href="/" style={{textDecoration: 'none', color: 'black'}}>
                                 <Typography align="center" variant="h3">
                                     AJ WALLACE
                                 </Typography></a>
                         </Grid>
                         <Grid item md={4}xs={3}>
                             <Grid container justify="flex-end">
+                                <Button edge="end"
+                                        href="/about">About</Button>
+
+
+
+
                                 <Button edge="end"
                                         href="https://ajwallacemusic.com/contact">Contact</Button>
                             </Grid>
