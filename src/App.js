@@ -31,7 +31,7 @@ const styles = theme => ({
             duration: theme.transitions.duration.short,
         }),
         '&:hover': {
-                opacity: 0.8,
+                opacity: 0.89,
                 transition: theme.transitions.create('opacity', {
                 duration: theme.transitions.duration.short,
                  })
