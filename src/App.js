@@ -5,16 +5,13 @@ import computer from './static/images/computer.png';
 import Container from "@material-ui/core/Container";
 import './App.css';
 import Grid from "@material-ui/core/Grid";
-import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
-import Toolbar from "@material-ui/core/Toolbar";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import Button from "@material-ui/core/Button";
-import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from 'prop-types';
+import Header from "./Components/Header";
 
 const styles = {
     colorDefault: {
@@ -33,42 +30,11 @@ const styles = {
     }
 };
 
-function Header(props){
-    const {classes} = props
-return (
-    <AppBar position="static" elevation={0} color="default" classes={{root: classes.colorDefault}}>
-        <Toolbar>
-            <Grid container justify="space-between">
-                {/*<Grid item xs={1}>*/}
-                {/*<IconButton edge="start">*/}
-                {/*<MenuIcon/>*/}
-                {/*</IconButton>*/}
-                {/*</Grid>*/}
-                <Grid item md={4} xs={3}>
-                    <Button href="#">Home</Button>
-                </Grid>
-                <Grid item md={4} xs={6}>
-                    <a href="#" style={{textDecoration: 'none', color: 'black'}}>
-                        <Typography align="center" variant="h3">
-                            AJ WALLACE
-                        </Typography></a>
-                </Grid>
-                <Grid item md={4}xs={3}>
-                    <Grid container justify="flex-end">
-                        <Button edge="end"
-                                href="https://ajwallacemusic.com/contact">Contact</Button>
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Toolbar>
-    </AppBar>
-) }
+
 
 function App() {
-
     return (
         <div>
-
             <Header/>
             <Container maxWidth="false">
                 <Grid container flex direction="row" justify="center">
