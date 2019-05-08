@@ -18,9 +18,6 @@ const styles = {
         width: '100%',
         textAlign: 'center',
         color: 'white',
-    },
-    card: {
-        position: 'relative'
     }
 };
 
@@ -39,6 +36,7 @@ function Main() {
                 </Grid>
 
             </Grid>
+
             <Grid container direction="row" alignItems="center" justify="center" spacing={1}>
                 <Grid item md={6} xs={12} justify="center">
 
