@@ -15,7 +15,6 @@ import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from 'prop-types';
-import theme from "./index";
 
 const styles = theme => ({
     colorDefault: {
