@@ -15,11 +15,31 @@ import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from 'prop-types';
+import theme from "./index";
 
-const styles = {
+const styles = theme => ({
     colorDefault: {
-        background: 'white',
+        backgroundColor: 'white',
     },
+    card: {
+        position: 'relative'
+    },
+    hover: {
+        backgroundColor: "black",
+        opacity: 1,
+        transition: theme.transitions.create('opacity', {
+            duration: theme.transitions.duration.short,
+        }),
+        '&:hover': {
+                opacity: 0.8,
+                transition: theme.transitions.create('opacity', {
+                duration: theme.transitions.duration.short,
+                 })
+        }
+    }
+});
+
+const styles1 = {
     overlay: {
         position: 'absolute',
         display: 'inline',
@@ -27,14 +47,8 @@ const styles = {
         width: '100%',
         textAlign: 'center',
         color: 'white',
-    },
-    card: {
-        position: 'relative'
-    },
-    focusHighlight: {
-        opacity: 0.5
     }
-};
+}
 
 function App(props) {
     const {classes} = props;
@@ -42,7 +56,7 @@ function App(props) {
         <div>
             <div>
                 <Box boxShadow={0}>
-                    <AppBar position="static" elevation={0} color="default" classes={{root: classes.colorDefault}}>
+                    <AppBar position="static" elevation={0} color="default" classes={{colorDefault: classes.colorDefault}}>
                         <Toolbar>
                             <Grid container justify="space-between">
                                     {/*<Grid item xs={1}>*/}
@@ -85,15 +99,15 @@ function App(props) {
                 <Grid container direction="row" alignItems="center" justify="center" spacing={1}>
                     <Grid item md={6} xs={12} justify="center">
 
-                        <Card style={{position: 'relative'}}>
-                            <CardActionArea classes={{focusVisible: classes.focusVisible}}>
+                        <Card>
+                            <CardActionArea classes={{root: classes.hover}}>
                                 <a href="https://ajwallacemusic.com" target="_blank">
                                     <CardMedia
                                         component="img"
                                         image={ajwmusic}
                                         maxWidth={600}
                                     />
-                                    <div style={styles.overlay}>
+                                    <div style={styles1.overlay}>
                                         <Typography variant="h4">Music</Typography>
                                     </div>
                                 </a>
@@ -103,14 +117,14 @@ function App(props) {
                     </Grid>
                     <Grid item md={6} xs={12} justify="center">
                         <Card>
-                            <CardActionArea>
+                            <CardActionArea classes={{root: classes.hover}}>
                                 <a href="https://github.com/ajwallacemusic">
                                     <CardMedia
                                         component="img"
                                         image={computer}
                                         maxWidth={600}
                                     />
-                                    <div style={styles.overlay}>
+                                    <div style={styles1.overlay}>
                                         <Typography variant="h4" >Code</Typography>
                                     </div>
                                 </a>
