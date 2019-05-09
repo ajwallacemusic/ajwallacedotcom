@@ -27,7 +27,9 @@ function Header(props){
                         {/*</IconButton>*/}
                         {/*</Grid>*/}
                         <Grid item md={4} xs={3}>
+                            <Grid container justify="flex-start">
                             <Button href="/">Home</Button>
+                            </Grid>
                         </Grid>
                         <Grid item md={4} xs={6}>
                             <a href="/" style={{textDecoration: 'none', color: 'black'}}>
@@ -39,12 +41,6 @@ function Header(props){
                             <Grid container justify="flex-end">
                                 <Button edge="end"
                                         href="/about">About</Button>
-
-
-
-
-                                <Button edge="end"
-                                        href="https://ajwallacemusic.com/contact">Contact</Button>
                             </Grid>
                         </Grid>
                     </Grid>

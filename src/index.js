@@ -18,6 +18,14 @@ const theme = createMuiTheme({
         button: {
             fontFamily: "'Roboto Condensed', sans-serif"
         },
+        body1 : {
+            fontFamily:  "'Crimson Text', serif",
+            fontSize: "1.25rem",
+            lineHeight: "1.44286em",
+            letterSpacing: "0.00938em",
+            color: "rgba(0, 0, 0, 0.6)"
+
+        },
         h1: {
             fontFamily: "'Crimson Text', serif"
         },
