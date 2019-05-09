@@ -45,6 +45,8 @@ const theme = createMuiTheme({
     }
 });
 
+export default theme;
+
 // font-family: 'Roboto Condensed', sans-serif;
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Abel', sans-serif;
