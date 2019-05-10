@@ -9,6 +9,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from 'prop-types';
 import Link from "@material-ui/core/Link";
+import ReactPlayer from "react-player";
+import Youtube from "./Youtube";
 
 
 const styles = theme => ({
@@ -28,19 +30,11 @@ function About(props) {
     const { classes } = props;
     return (
         <Container>
-            <Grid container justify="center" className={classes.card}>
-            <Grid item md={6} xs={12} justify="center">
-                <Card elevation={0} square>
-                            <CardMedia
-                                component="img"
-                                image={ajwmusic}
-                                maxWidth={600}
-                            />
-
-
-                </Card>
-            </Grid>
-            </Grid>
+                    <Grid container justify="center">
+                    <Grid item xs={12} sm={10} md={6}>
+                    <Youtube youtubeId={"AO6LJK-0wFg"}/>
+                    </Grid>
+                    </Grid>
 
             <Grid container justify="center">
                 <Grid item md={6} sm={10} xs={12}>
