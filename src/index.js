@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import { ThemeProvider } from "@material-ui/styles/";
+import BrowserRouter from "react-router-dom/es/BrowserRouter";
 
 
 const theme = createMuiTheme({
@@ -16,6 +17,14 @@ const theme = createMuiTheme({
         fontWeightBold: 700,
         button: {
             fontFamily: "'Roboto Condensed', sans-serif"
+        },
+        body1 : {
+            fontFamily:  "'Crimson Text', serif",
+            fontSize: "1.25rem",
+            lineHeight: "1.44286em",
+            letterSpacing: "0.00938em",
+            color: "rgba(0, 0, 0, 0.6)"
+
         },
         h1: {
             fontFamily: "'Crimson Text', serif"
@@ -43,9 +52,11 @@ export default theme;
 // font-family: 'Abel', sans-serif;
 
 ReactDOM.render(
+    <BrowserRouter>
     <ThemeProvider theme={theme}>
     <App />
-    </ThemeProvider>,
+    </ThemeProvider>
+    </BrowserRouter>,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
