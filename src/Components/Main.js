@@ -65,7 +65,7 @@ function Main(props) {
 
                     <Card>
                         <CardActionArea classes={{root: classes.hover}}>
-                            <a href="https://ajwallacemusic.com" target="_blank">
+                            <a href="https://ajwallacemusic.com" target="_blank" rel="noopener noreferrer">
                                 <CardMedia
                                     component="img"
                                     image={ajwmusic}
