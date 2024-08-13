@@ -67,7 +67,6 @@ function About(props) {
                             <Typography variant="body1" paragraph className={classes.paper}>
                                 <ul style={{listStyle: "none", marginLeft: "-2.5rem"}}>
                                     <li><Link href="mailto:ajwallacemusic@gmail.com" target="_top">ajwallacemusic@gmail.com</Link></li>
-                                    <li><Link href="https://s3-us-west-2.amazonaws.com/ajwallace.com/images/AJ+Wallace+Resume.pdf">resumé</Link></li>
                                 </ul>
 
                             </Typography>
