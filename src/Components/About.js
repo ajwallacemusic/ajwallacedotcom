@@ -3,7 +3,6 @@ import Typography from "@material-ui/core/es/Typography/Typography";
 import Container from "@material-ui/core/Container";
 import ajwmusic from "../static/images/ajwmusic.png";
 import Grid from "@material-ui/core/Grid";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import withStyles from "@material-ui/core/styles/withStyles";
